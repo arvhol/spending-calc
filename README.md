@@ -1,0 +1,23 @@
+# spending-calc
+Calculates my total income and expense and prints it into a excel sheets.
+
+Takes two arguments
+First is a other income/expenses integer
+Second is an xlsx file with all the transactions for the month
+
+------ File.xlsx example --------
+  A     B         C       
+1
+2
+3
+4 Date  Descript.  Amount
+5       Ica        130,00
+6       Coop       321,30
+--------------------------------
+
+It will summarise total expenses, income and the difference and then write it to 
+another xlsx document at the last column of the rows.
+
+
+The program will view transactions with description "Swish från" as something I 
+payed for a friend and therefore subtract that amount from total expenses. 
