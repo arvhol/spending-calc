@@ -1,14 +1,11 @@
-# Read excel files and compile income and expense for the mont
+# Read excel files and compile income and expense for the month
 import openpyxl
 import sys
 
-income = sys.argv[1]
-expense = sys.argv[2]
+other = sys.argv[1]
+path = sys.argv[2]
 totExpense = 0
 totSalary = 0
-
-# Pass path as arg
-path = "C:/Users/arvid/OneDrive/Dokument/Penningpung/transaktioner/transJan22_ut.xlsx"
 
 # Open workbook and get active sheet from active attribute
 wb_obj = openpyxl.load_workbook(path)
@@ -44,7 +41,7 @@ print("utgifter", totExpense)
 print("lon", totSalary)
 print("inkomst", totSalary+int(income))
 
-wb_obj = openpyxl.load_workbook("C:/Users/arvid/OneDrive/Dokument/Penningpung/in_ut.xlsx")
+wb_obj = openpyxl.load_workbook("/Documents/Projekt/Stonks/in_ut.xlsx")
 sheet_obj = wb_obj.active
 
 column = 2
@@ -68,4 +65,4 @@ cellIn.value = totSalary+int(income)
 cellEx.value = totExpense
 cellTot.value = totSalary+int(income)+totExpense
 
-wb_obj.save("C:/Users/arvid/OneDrive/Dokument/Penningpung/in_ut.xlsx")
+wb_obj.save("/Documents/Projekt/Stonks/in_ut.xlsx")
