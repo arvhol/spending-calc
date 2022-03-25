@@ -8,8 +8,8 @@ Takes two arguments
 First is a other income/expenses integer
 Second is an xlsx file with all the transactions for the month.
 
+### Example file
 
------- File.xlsx example --------
   A     B         C       
 1
 2
@@ -17,8 +17,9 @@ Second is an xlsx file with all the transactions for the month.
 4 Date  Descript.  Amount
 5       Ica        130,00
 6       Coop       321,30
---------------------------------
 
+
+### Summary
 It will summarise total expenses, income and the difference and then write it to 
 another xlsx document at the last column of the rows.
 
