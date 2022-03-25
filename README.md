@@ -1,4 +1,5 @@
 # spending-calc
+!!!!!! NOT DONE !!!!!!!
 Calculates my total income and expense and prints it into a excel sheets.
 Skandiabanken provides an xlsx file with all the transactions in a choosen 
 timespan and that file is what I used to model this program. 
