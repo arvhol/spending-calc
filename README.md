@@ -9,14 +9,7 @@ First is a other income/expenses integer
 Second is an xlsx file with all the transactions for the month.
 
 ### Example file
-
-  A     B         C       
-1
-2
-3
-4 Date  Descript.  Amount
-5       Ica        130,00
-6       Coop       321,30
+![Example table in Excel](ExampleFile.png)
 
 
 ### Summary
